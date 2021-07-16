@@ -32,6 +32,19 @@ const Calc = () => {
     };
   };
 
+  const handleReset = () => {
+    setCalculation({
+      bill: 0,
+      people: 0, 
+      percent: 0
+    });
+
+    setTotalsPer({
+      tip: 0,
+      total: 0
+    });
+  };
+
   return (
     <article>
       <section>
@@ -45,7 +58,8 @@ const Calc = () => {
       <section>
         <Results 
           tip={tip} 
-          total={total} 
+          total={total}
+          handleReset={handleReset}
         />
       </section>
     </article>

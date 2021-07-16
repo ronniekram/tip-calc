@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Results = ({tip, total}) => {
+const Results = ({tip, total, handleReset}) => {
 
   return (
     <div>

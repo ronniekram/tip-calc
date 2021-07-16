@@ -26,7 +26,12 @@ const Form = ({ calculation, setCalculation, calculate }) => {
     <article className="calculator">
         <div className="input">
           <label for="total">Bill</label> <br />
-          <input type="text" placeholder="0" name="total" onChange={handleChange} />
+          <input type="text" 
+            placeholder="0" 
+            name="bill"
+            value={calculation.bill} 
+            onChange={handleChange} 
+          />
         </div>
 
         <div className="tip">
@@ -37,13 +42,28 @@ const Form = ({ calculation, setCalculation, calculate }) => {
             <button type="button" value=".15" name="percent">15%</button>
             <button type="button" value=".25" name="percent">25%</button>
             <button type="button" value=".5" name="percent">50%</button>
-            <input type="text" name="percent" id="custom" placeholder="Custom" />
           </div>
+
+          <input 
+            type="text" 
+            name="percent" 
+            id="custom" 
+            placeholder="Custom"
+            value={calculation.percent} 
+            onChange={handleChange} 
+            />
+
         </div>
 
         <div className="input">
           <label for="people">Number of People</label> <br />
-          <input type="text" placeholder="0" name="people" onChange={handleChange} />
+          <input 
+            type="text" 
+            placeholder="0" 
+            name="people"
+            value={calculation.people} 
+            onChange={handleChange} 
+          />
         </div>
     </article>
   );
