@@ -1,0 +1,36 @@
+[data-theme="default"] {
+  --calc-text: hsl(172, 67%, 45%);
+  --calc-bg: hsl(183, 100%, 15%);
+  --text: hsl(186, 14%, 43%);
+  --disabled: hsl(184, 14%, 56%);
+  --bg: hsl(185, 41%, 84%);
+  --input-bg: hsl(189, 41%, 97%);
+  --form-bg: hsl(0, 0%, 100%);
+}
+
+body {
+  font-family: 'Space Mono';
+  background-color: var(--bg);
+}
+
+.title {
+  width: 100%;
+  color: var(--text);
+  text-align: center;
+  padding: 2rem 0;
+}
+
+.calc-container {
+  background-color: var(--form-bg);
+  width: 100%;
+  border-radius: 1rem;
+}
+
+
+@media only screen and (min-width: 1140px){
+  .calc-container {
+    width: 70%;
+    margin: auto;
+  }
+  
+}
